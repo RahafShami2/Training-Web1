@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title> 
+        Ass 4 
+    </title> 
+</head> 
+<body> 
+  
+    <div id="myBtnContainer">
+        <h1 style="color: green"> 
+            How to replace  Special Characters from StringJavaScript? 
+        </h1> 
+        <textarea id="w3review" rows="4" cols="50"> #Hi , how to remove text  in JavaScript?! </textarea>
+        <button onclick="removeText()">filter</button>
+   
+    <button onclick="Display()"> 
+        Display
+    </button> 
+    <script type="text/javascript"> 
+      function removeText() {
+        var v= document.getElementById("w3review").value
+        newText = v.replace( /[^a-zA-Z0-9 ]/g, ' '); 
+      }
+        function Display(){
+            document.getElementById("w3review").value= newText;
+}
+    </script> 
+    </div>
+</body> 
+</html>

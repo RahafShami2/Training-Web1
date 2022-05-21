@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:900px;
+            margin:20px auto;
+position: relative;
+        }
+        .container img {
+            width:100%;
+
+        }
+        .ovarlay{
+            bottom:4px;
+            left:0;
+            width:100%;
+            position:absolute;
+            background-color: rgba(0,0,0,0.25);
+            padding:10px;
+            box-sizing: border-box;
+font-size: 14px;
+color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="1.jpg" alt="pic">
+        <div class="ovarlay"> this is caption</div>
+            <div class="text"><b></b></div>
+    </div>
+</body>
+</html>
+

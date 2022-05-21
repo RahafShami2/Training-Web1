@@ -1,0 +1,54 @@
+selector
+{
+    
+}
+@media print /* عند الطباعة تظهر فقط */
+{
+p{
+color:red;
+}
+}
+@media all
+{
+h1{
+font-size:20 px;
+
+
+}
+}
+@media screen 
+{
+table{
+
+}
+}
+h1{
+    color:blue;
+    text-align:center;
+   /* position: absolute;بتغير مكانه
+    top:50 px;
+    left: 80 px;*/
+}
+h2{
+   /* background-image:url(rah.jpg)
+    background-size=100% 100%;*/
+    color:pink;
+    font-family:monospace;
+    /*position: fixed; بضل ثابت مكانه معي 
+    right:40 px;
+    bottom:40 px;*/
+}
+.name{
+    
+    background-color: brown;
+    color:green;
+    margin-top:1000 px;
+}
+@media all and(max-width:800 px) /*بتغير اللون لما يكون اقل من 800 بكسل*/
+{
+    .name 
+    {
+        width:100%;
+    }
+}
+/* comment */

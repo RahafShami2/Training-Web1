@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <title>JavaScript Regular Expression to Replace Special Characters from String</title>
+        <link rel="stylesheet" href="style.css" />
+        <script data-require="jquery" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="script.js"></script>
+        <script type="text/javascript">
+                function replaceCharacters() {
+                        var regExpr = /[^a-zA-Z0-9-. ]/g;
+                        var userText = document.getElementById('user').value;
+                        alert(userText.replace(regExpr, ""));
+                }
+        </script>
+</head>
+<body>
+        <div>
+                <h1>JavaScript Regular Expression to Replace Escape Special Characters from String</h1>
+        </div>
+        <div>
+                 <h2>Enter Your Input Text</h2>
+        </div>
+        <div>
+                <input type="text" id="user" value="Hello Anil' Welcome you  to#$% code-@!sample.$*^com" class="text" />
+                <input type="button" id="btnRemove" value="Remove Special Characters" onclick="replaceCharacters()" class="success" />
+        </div>
+</body>
+</html>

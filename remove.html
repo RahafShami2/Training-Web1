@@ -1,0 +1,36 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title> 
+        Ass 4 
+    </title> 
+</head> 
+<body> 
+  
+    <div id="myBtnContainer">
+        <h1 style="color: green"> 
+            How to remove text JavaScript? 
+        </h1> 
+        <textarea id="w3review" rows="4" cols="50"> #Hi , how to remove text  in JavaScript?! </textarea>
+        <button onclick="removeText()">filter</button>
+    <p> 
+        New String is: <span class="output"></span> 
+    </p> 
+    <button onclick="Display()"> 
+        Display
+    </button> 
+    <script type="text/javascript"> 
+        function removeText() { 
+            var v= document.getElementById("w3review").value
+            newText = v.replace(/[`~!@#$%^&*()_|+\-=÷¿?;:'",.<>\{\}\[\]\\\/]/gi, ''); 
+            document.querySelector('.output').textContent 
+                    = newText; 
+        } 
+        function Display(){
+            document.getElementById("w3review").value= newText;
+}
+    </script> 
+    </div>
+</body> 
+</html>
